@@ -1,0 +1,5 @@
+https://github.com/MCUdude/MightyCore
+Has MinimumSchematic.png and 
+DetailedPinout.jpg
+DevelopmentBoard.jpg
+=====================================
