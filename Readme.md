@@ -42,7 +42,7 @@ I would like to acknowledge the three most important sources from which further 
 
 ### Construction:
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-PedalShield/blob/master/Circuit1.png" width="1118" height="957" />
+<img src="https://github.com/TobiasVanDyk/AtMega1284-PedalShield/blob/master/Circuit1.png" width="1000" height="957" />
 
 Schematic 1 gives the circuit used and Breadboard 1 is its physical representation (Fritzing 1) with Photo 1 the actual bread-boarded circuit in operation. It may be advantageous to have a potentiometer as a mixer for the dry (equal to the input) and the wet (after processing by the MCU) signal, and Schematic 2, Breadboard 2 and Photo 2 gives the circuit details of a previously constructed circuit which incorporates such an input to output mixer. Also look at the Open Music Labs StompBox for another mixer implementation using four OpAmps. 
 
