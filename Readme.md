@@ -8,7 +8,7 @@ A comparison of three Atmel AVR microprocessors namely the 328P that is the Uno,
 
 |Aspect       | 328P | 1284P  | 2560P |
 |-------------|------|--------|-------|
-|**RAM 	      |	2k 	 | 16k    | 8k**  |
+|RAM 	        |	2k 	 | 16k    | 8k    |
 |Flash 	      |	32k  | 128k   | 256k  |
 |EEPROM       |	1k	 | 4k 	  | 4k    |
 |UART 	      |	1 	 | 2 	    | 4     |
