@@ -6,15 +6,15 @@ I have ported the Arduino Uno ATMega328 Pedalshield (as developed by Electrosmas
 
 A comparison of three Atmel AVR microprocessors namely the 328P that is the Uno, the 2560P that is the Mega2560, and the Mega1284 shows the latter to have the most RAM of the three: 
 
-|Aspect       | 328P | 1284P | 2560P |
-|-------------|------|-------|-------|
-|RAM 	        |	2k 	 | 16k 	 | 8k    |
-|Flash 	      |	32k  | 128k  | 256k  |
-|EEPROM       |	1k	 | 4k 	 | 4k    |
-|UART 	      |	1 	 | 2 	   | 4     |
-|IO Pins      |	23 	 | 32 	 | 86    |
-|Interrupts   |	2 	 | 3     | 8     |
-|Analog Inputs| 6	   | 8 	   | 16    |
+|Aspect       | 328P | 1284P  | 2560P |
+|-------------|------|--------|-------|
+|**RAM 	      |	2k 	 | 16k    | 8k**  |
+|Flash 	      |	32k  | 128k   | 256k  |
+|EEPROM       |	1k	 | 4k 	  | 4k    |
+|UART 	      |	1 	 | 2 	    | 4     |
+|IO Pins      |	23 	 | 32 	  | 86    |
+|Interrupts   |	2 	 | 3      | 8     |
+|Analog Inputs| 6	   | 8 	    | 16    |
 
 I started by bread-boarding the Uno-based pedalSHIELD as in the Electrosmash specification but I did not have the same RRO OpAmp as specified. As a result I ended up with a circuit which I considered to give acceptable results. The details of this Uno version are given in appendix 2. This same circuit was then ported to the ATMega1284 - surprisingly apart from the non-essential changes such as assigning the switches and LED to a different port, and allocating 12,000 kB instead of 2,000 kB of RAM for the delay buffer, only **one essential change had to be made in the source code, namely changing the Timer1/PWM OC1A and OC1B outputs from Port B on the Uno to Port D (PD5 and PD4) on the ATMega1284.** 
 
