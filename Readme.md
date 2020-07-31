@@ -42,7 +42,7 @@ I would like to acknowledge the three most important sources from which further 
 
 ### Construction:
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-PedalShield/blob/master/Circuit1.png" width="1000" height="850" />
+<img src="images/Circuit1.png" width="1000" height="850" />
 
 Schematic 1 gives the circuit used and Breadboard 1 is its physical representation (Fritzing 1) with Photo 1 the actual bread-boarded circuit in operation. It may be advantageous to have a potentiometer as a mixer for the dry (equal to the input) and the wet (after processing by the MCU) signal, and Schematic 2, Breadboard 2 and Photo 2 gives the circuit details of a previously constructed circuit which incorporates such an input to output mixer. Also look at the Open Music Labs StompBox for another mixer implementation using four OpAmps. 
 
@@ -52,7 +52,7 @@ Schematic 1 gives the circuit used and Breadboard 1 is its physical representati
 
 **DAC PWM Stage:** As the ATMega1284 does not have its own DAC, the output audio waveforms are generated using a pulse width modulation of an RC filter. The two PWM outputs on PD4 and PD5 are set as the high and low bytes of the audio output and mixed with the two resistors (4k7 and 1M2) in a 1:256 ratio (low byte and high byte) - which generates the audio output. It may be worthwhile experimenting with other resistor pairs such as the 3k9 1M ohm pair used by Open Music Labs in their StompBox. 
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-PedalShield/blob/master/Breadboard2.png" width="936" height="850" />
+<img src="images/Breadboard2.png" width="936" height="850" />
 
 ### Software: 
 
